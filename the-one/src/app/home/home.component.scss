@@ -1,0 +1,16 @@
+.background-container{
+    height: 700px;
+     width: 100%; 
+     justify-content: center; 
+     display: flex;
+}
+
+@media only screen and (max-width: 599px) {
+    .background-container{
+         height: 350px;
+         width: 100%; 
+         justify-content: center; 
+         display: flex;
+    }
+
+}
