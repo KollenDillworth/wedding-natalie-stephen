@@ -1,0 +1,46 @@
+.tb-height{
+    height: 250px;
+    justify-content: center;
+}
+.tb-height-mobile{
+    height: 125px;
+    justify-content: center;
+}
+
+.sizeof-text{
+    font-size: 50px;
+}
+.sizeof-text-mobile{
+    font-size: 30px;
+}
+
+.Header-info{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    //font-family:'Times New Roman', Times, serif;
+}
+
+.alignment{
+    justify-content: center;
+    margin-top: 50px;
+}
+.alignment-mobile{
+    margin-top: 40px;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  mat-sidenav {
+    width: 150px;
+  }
+
+  .mat-button.mat-primary {
+    color: red;
+ }
