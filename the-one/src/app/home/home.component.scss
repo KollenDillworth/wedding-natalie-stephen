@@ -5,12 +5,36 @@
      display: flex;
 }
 
-@media only screen and (max-width: 599px) {
-    .background-container{
-         height: 350px;
-         width: 100%; 
-         justify-content: center; 
-         display: flex;
+.body-text{
+    font-size: 24px; 
+}
+.body-pad{
+    padding-top: 4rem;
+}
+
+.header-text{
+    font-size: 45px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+    .header-text{
+        font-size: 34px;
+    }
+    .body-text{
+        font-size: 20px; 
+    }
+}
+
+@media only screen and (max-width: 599px){
+    .header-text{
+        font-size: 34px;
+        line-height: 34px;
+    }
+    .body-text{
+        font-size: 20px; 
     }
 
+    .body-pad{
+        padding-top: 2rem;
+    }
 }

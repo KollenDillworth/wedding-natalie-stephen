@@ -1,7 +1,7 @@
 
 <mat-sidenav-container class="example-container example-is-mobile">
 
-  <mat-sidenav #sidenav mode="over">
+  <mat-sidenav #sidenav mode="over" style="background-color: rgb(231,206,133);">
     <mat-list>
       <mat-list-item> 
         <a [routerLink]="['/home']">Home</a> 
@@ -10,7 +10,7 @@
         <a [routerLink]="['/our-story']">Our Story</a> 
       </mat-list-item>
       <mat-list-item> 
-        The Details
+        <a [routerLink]="['/details']">Wedding Details</a> 
       </mat-list-item>
       <mat-list-item> 
         Travel
@@ -24,21 +24,23 @@
      </mat-list>
   </mat-sidenav>
 
-  <mat-sidenav-content class="example-sidenav-container">
+  <mat-sidenav-content class="example-sidenav-container" style="background-color: #f0f0f0;">
 
-    <mat-toolbar class="tb-height Header-info" fxHide.xs="true">
+    <mat-toolbar class="tb-height Header-info thebox" fxHide.xs="true" style="background-color: rgb(231,206,133, .7);">
       <mat-toolbar-row class="alignment" fxLayout="row" fxFlexAlign="center">
-          <div class="sizeof-text">Natalie & Stephen</div>
+          <div class="sizeof-text" style="font-family: myCursiveFont; font-weight: bold;">Natalie & Stephen</div>
       </mat-toolbar-row>
   
-      <mat-toolbar-row fxHide.xs="true" fxLayout="row" fxFlexAlign="center" fxLayoutGap.lg="40px" fxLayoutGap.md="30px" fxLayoutGap="20px" style="justify-content: center;">
+      <mat-toolbar-row class="jonahStyle" fxHide.xs="true" fxLayout="row" fxFlexAlign="center" fxLayoutGap.lg="40px" fxLayoutGap.md="30px" fxLayoutGap="20px" style="justify-content: center;">
           <div>
               <a [routerLink]="['/home']">Home</a>
           </div>
           <div>
               <a [routerLink]="['/our-story']">Our Story</a>
           </div>
-          <div>The Details</div>
+          <div>
+            <a [routerLink]="['/details']">Wedding Details</a>
+          </div>
           <div>Travel</div>
           <div>Registry</div>
           <div>RSVP</div>
@@ -46,7 +48,7 @@
 
     </mat-toolbar>
 
-    <mat-toolbar class="tb-height-mobile Header-info" fxLayout="row" fxHide.sm="true" fxHide.md="true" fxHide.lg="true" fxHide.xl="true">
+    <mat-toolbar class="tb-height-mobile Header-info" fxLayout="row" fxHide.sm="true" fxHide.md="true" fxHide.lg="true" fxHide.xl="true" style="background-color: rgb(231,206,133, .7);">
 
       <mat-toolbar-row class="alignment-mobile">
         <div class="sizeof-text-mobile">Natalie & Stephen</div>

@@ -1,0 +1,19 @@
+.example-card {
+    max-width: 400px;
+  }
+
+  .bg2 {
+    /* The image used */
+    background-image: url(../../assets/images/chorro_1.jpg);
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .thebox2{
+    box-shadow: 0 .32rem .32rem 0 rgb(0,0,0, 10%);
+}

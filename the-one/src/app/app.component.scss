@@ -37,6 +37,11 @@
     right: 0;
   }
 
+  .thebox{
+      position: relative;
+      box-shadow: 0 .32rem .32rem 0 rgb(0,0,0, 10%);
+  }
+
   mat-sidenav {
     width: 200px;
   }

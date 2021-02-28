@@ -1,22 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OurStoryComponent } from './our-story.component';
+import { DetailsComponent } from './details.component';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
 import { MaterialModule } from '../material/material.module';
 
 
-
 @NgModule({
-  declarations: [OurStoryComponent],
+  declarations: [DetailsComponent],
   imports: [
     CommonModule,
     FlexLayoutModule,
     MaterialModule,
     RouterModule.forChild([
-      {path: 'our-story', component: OurStoryComponent}
+      {path: 'details', component: DetailsComponent}
     ])
   ]
 })
-export class OurStoryModule { }
+export class DetailsModule { }
