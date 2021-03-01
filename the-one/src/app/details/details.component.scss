@@ -17,3 +17,26 @@
   .thebox2{
     box-shadow: 0 .32rem .32rem 0 rgb(0,0,0, 10%);
 }
+
+.faq-container{
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 10rem;
+}
+
+@media only screen and (max-width: 599px){
+    .faq-container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+// @media only screen and (min-width: 600px) and (max-width: 959px) {
+//     .header-text{
+//         font-size: 34px;
+//     }
+//     .body-text{
+//         font-size: 20px; 
+//     }
+// }

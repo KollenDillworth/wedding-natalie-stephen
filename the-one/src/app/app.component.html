@@ -4,22 +4,27 @@
   <mat-sidenav #sidenav mode="over" style="background-color: rgb(231,206,133);">
     <mat-list>
       <mat-list-item> 
-        <a [routerLink]="['/home']">Home</a> 
+          <div class="cursiveStyle" style="font-size: 20px;">N & S</div>
+          
+            <mat-divider [inset]="true"></mat-divider>
       </mat-list-item>
       <mat-list-item> 
-        <a [routerLink]="['/our-story']">Our Story</a> 
+        <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/home']">Home</a> 
       </mat-list-item>
       <mat-list-item> 
-        <a [routerLink]="['/details']">Wedding Details</a> 
+        <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/our-story']">Our Story</a> 
       </mat-list-item>
       <mat-list-item> 
-        Travel
+        <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/details']">Wedding Details</a> 
       </mat-list-item>
       <mat-list-item> 
-        Registry
+        <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/details']">Travel</a> 
       </mat-list-item>
       <mat-list-item> 
-        RSVP
+        <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/details']">Registry</a> 
+      </mat-list-item>
+      <mat-list-item> 
+        <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/details']">Rsvp</a> 
       </mat-list-item>
      </mat-list>
   </mat-sidenav>
@@ -31,19 +36,28 @@
           <div class="sizeof-text" style="font-family: myCursiveFont; font-weight: bold;">Natalie & Stephen</div>
       </mat-toolbar-row>
   
-      <mat-toolbar-row class="jonahStyle" fxHide.xs="true" fxLayout="row" fxFlexAlign="center" fxLayoutGap.lg="40px" fxLayoutGap.md="30px" fxLayoutGap="20px" style="justify-content: center;">
+      <mat-toolbar-row class="jonahStyle" fxHide.xs="true" fxLayout="row wrap" fxFlexAlign="center" fxLayoutGap.lg="40px" fxLayoutGap.md="30px" fxLayoutGap="20px" style="justify-content: center;">
           <div>
-              <a [routerLink]="['/home']">Home</a>
+            <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/home']">
+              Home
+            </a>
+              <!-- <a [routerLink]="['/home']">Home</a> -->
           </div>
           <div>
-              <a [routerLink]="['/our-story']">Our Story</a>
+              <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/our-story']">Our Story</a>
           </div>
           <div>
-            <a [routerLink]="['/details']">Wedding Details</a>
+            <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/details']">Wedding Details</a>
           </div>
-          <div>Travel</div>
-          <div>Registry</div>
-          <div>RSVP</div>
+          <div>
+            <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/details']"> Travel</a>
+          </div>
+          <div class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/details']">
+            <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/details']"> Registry</a>
+          </div>
+          <div class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/details']">
+            <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/details']"> Rsvp</a>
+          </div>
       </mat-toolbar-row>
 
     </mat-toolbar>
