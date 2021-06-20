@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DetailsModule } from './details/details.module';
 import { HomeModule } from './home/home.module';
 import { OurStoryModule } from './our-story/our-story.module';
+import { TravelModule } from './travel/travel.module';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'}
@@ -13,6 +14,7 @@ const routes: Routes = [
     HomeModule,
     OurStoryModule,
     DetailsModule,
+    TravelModule,
     RouterModule.forRoot(routes)
   ],
   exports: [RouterModule]
