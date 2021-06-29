@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DetailsModule } from './details/details.module';
 import { HomeModule } from './home/home.module';
 import { OurStoryModule } from './our-story/our-story.module';
+import { RegistryModule } from './registry/registry.module';
 import { TravelModule } from './travel/travel.module';
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
     OurStoryModule,
     DetailsModule,
     TravelModule,
+    RegistryModule,
     RouterModule.forRoot(routes)
   ],
   exports: [RouterModule]

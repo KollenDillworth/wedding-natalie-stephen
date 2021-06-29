@@ -44,6 +44,16 @@ body { margin: 0;}
     background-size: 100% 100%;
 }
 
+.bg5 {
+    /* The image used */
+    // background-image: url(./assets/images/mountains-background.jpg);
+    background-image: url(./assets/images/natalie-bg-img.png);
+    /* Full height */
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 @media only screen and (max-width: 599px){
     .bg {
         /* The image used */
