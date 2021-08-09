@@ -49,6 +49,7 @@ body { margin: 0;}
     // background-image: url(./assets/images/mountains-background.jpg);
     background-image: url(./assets/images/natalie-bg-img.png);
     /* Full height */
+   height: 80%;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -72,6 +73,10 @@ body { margin: 0;}
     .bg4 {
        height: 90%;
     }
+
+    .bg5 {
+        height: 100%;
+     }
 }
   
 @font-face{
