@@ -23,9 +23,9 @@
       <mat-list-item> 
         <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/registry']">Registry</a> 
       </mat-list-item>
-      <!-- <mat-list-item> 
-        <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/details']">Rsvp</a> 
-      </mat-list-item> -->
+      <mat-list-item> 
+        <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/rsvp']">Rsvp</a> 
+      </mat-list-item>
      </mat-list>
   </mat-sidenav>
 
@@ -38,10 +38,7 @@
   
       <mat-toolbar-row class="jonahStyle" fxHide.xs="true" fxLayout="row wrap" fxFlexAlign="center" fxLayoutGap.lg="40px" fxLayoutGap.md="30px" fxLayoutGap="20px" style="justify-content: center;">
           <div>
-            <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/home']">
-              Home
-            </a>
-              <!-- <a [routerLink]="['/home']">Home</a> -->
+            <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/home']">Home</a>
           </div>
           <div>
               <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/our-story']">Our Story</a>
@@ -56,9 +53,9 @@
           <div>
             <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/registry']"> Registry</a>
           </div>
-          <!--<div class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/details']">
-            <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/details']"> Rsvp</a>
-          </div> -->
+          <div>
+            <a class="jonahStyle" style="font-size: 20px;" mat-button [routerLink]="['/rsvp']"> Rsvp</a>
+          </div>
       </mat-toolbar-row>
 
     </mat-toolbar>
