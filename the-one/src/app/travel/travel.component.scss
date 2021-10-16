@@ -1,3 +1,52 @@
   .thebox2{
     box-shadow: 0 .32rem .32rem 0 rgb(0,0,0, 10%);
 }
+
+.example-card {
+  max-width: 200px;
+  width: 200px;
+  margin-right: 10px;
+}
+.example-card-sm {
+  max-width: 315px;
+  width: 315px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.wrapper{
+  overflow:hidden;
+  width: 620px;
+}
+
+.carousel-inner{
+  display: flex;
+  width: 1260px;
+}
+
+.wrapper-sm{
+  overflow:hidden;
+  // width: 200px;
+  max-width: 315px;
+}
+
+.carousel-inner-sm{
+  display: flex;
+  width: 100%;
+}
+
+
+
+
+.carousel-innerA{
+  display: flex;
+  width: 1860px;
+}
+
+.carousel-innerAs{
+  display: flex;
+  width: 1860px;
+}
