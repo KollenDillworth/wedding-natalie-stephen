@@ -54,8 +54,7 @@
 
     <div style="margin-left: 30px; margin-right: 30px; justify-content: center; display: flex;">
         
-            <!-- <div class="wrapper">
-                
+            <div class="wrapper" fxHide fxHide.xs fxHide.sm fxShow.md fxShow.lg fxShow.xl>
                 
                 <div class="carousel-inner" #carousel>
                     <ng-container *ngFor="let rest of restaurants.restaurants; let i = index">
@@ -77,39 +76,31 @@
                     <button (click)="next()">Next</button>
                     <button (click)="prev()">Prev</button>
                 </div>
+            </div>
 
-
-            </div> -->
-
-            <div style="width: 100%;">
-
+            <div class="wrapper-sm" fxShow fxShow.xs fxShow.sm fxHide.md fxHide.lg fxHide.xl>
             
-                <div class="wrapper-sm">
-                
-                
-                    <div class="carousel-inner-sm" #carouselSm>
-                        <ng-container *ngFor="let rest of restaurants.restaurants; let i = index">
-                            <ng-container *ngIf="rest.type === 'brunch'">
-                                <mat-card class="example-card-sm">
-                                    <img mat-card-image style="width: 315px; height: 200px; margin-bottom: 0 !important;" src="../../assets/images/brunch/brunch-{{i+1}}.jpg">
-                                    <mat-divider inset></mat-divider>
-                                    <mat-card-content style="padding-top:10px;">
-                                    <p>
-                                        {{rest.name}}
-                                    </p>
-                                    </mat-card-content>
-                                </mat-card>
-                            </ng-container>
+                <div class="carousel-inner-sm" #carouselSm>
+                    <ng-container *ngFor="let rest of restaurants.restaurants; let i = index">
+                        <ng-container *ngIf="rest.type === 'brunch'">
+                            <mat-card class="example-card-sm">
+                                <img mat-card-image style="width: 315px; height: 200px; margin-bottom: 0 !important;" src="../../assets/images/brunch/brunch-{{i+1}}.jpg">
+                                <mat-divider inset></mat-divider>
+                                <mat-card-content style="padding-top:10px;">
+                                <p>
+                                    {{rest.name}}
+                                </p>
+                                </mat-card-content>
+                            </mat-card>
                         </ng-container>
-                    </div>
-
-                    <div>
-                        <button (click)="nextSm()">Next</button>
-                        <button (click)="prevSm()">Prev</button>
-                    </div>
-
-
+                    </ng-container>
                 </div>
+
+                <div>
+                    <button (click)="nextSm()">Next</button>
+                    <button (click)="prevSm()">Prev</button>
+                </div>
+
             </div>
         
     </div>
@@ -117,27 +108,48 @@
 
     <div style="margin-left: 30px; margin-right: 30px; justify-content: center; display: flex;">
         
-        <div class="wrapper">
-            
-            
-            <div class="carousel-innerA" #carouselA>
-                <ng-container *ngFor="let rest of americanRestaurants.restaurants; let i = index">
-                        <mat-card class="example-card">
-                            <img mat-card-image style="width: 200px; height: 200px; margin-bottom: 0 !important;" src="../../assets/images/brunch/brunch-1.jpg">
-                            <mat-divider inset></mat-divider>
-                            <mat-card-content style="padding-top:10px;">
-                            <p>
-                                {{rest.name}}
-                            </p>
-                            </mat-card-content>
-                        </mat-card>
-                </ng-container>
-            </div>
+        <div class="wrapper" fxHide fxHide.xs fxHide.sm fxShow.md fxShow.lg fxShow.xl>
+                <div class="carousel-innerA" #carouselA>
+                    <ng-container *ngFor="let rest of americanRestaurants.restaurants; let i = index">
+                            <mat-card class="example-card">
+                                <img mat-card-image style="width: 200px; height: 200px; margin-bottom: 0 !important;" src="../../assets/images/brunch/brunch-1.jpg">
+                                <mat-divider inset></mat-divider>
+                                <mat-card-content style="padding-top:10px;">
+                                <p>
+                                    {{rest.name}}
+                                </p>
+                                </mat-card-content>
+                            </mat-card>
+                    </ng-container>
+                </div>
 
-            <div>
-                <button (click)="nextA()">Next</button>
-                <button (click)="prevA()">Prev</button>
-            </div>
+                <div>
+                    <button (click)="nextA()">Next</button>
+                    <button (click)="prevA()">Prev</button>
+                </div>
+
+        </div>
+
+        <div class="wrapper-sm" fxShow fxShow.xs fxShow.sm fxHide.md fxHide.lg fxHide.xl>
+                
+                <div class="carousel-inner-sm" #carouselASM>
+                    <ng-container *ngFor="let rest of americanRestaurants.restaurants; let i = index">
+                            <mat-card class="example-card-SM">
+                                <img mat-card-image style="width: 315px; height: 200px; margin-bottom: 0 !important;" src="../../assets/images/brunch/brunch-1.jpg">
+                                <mat-divider inset></mat-divider>
+                                <mat-card-content style="padding-top:10px;">
+                                <p>
+                                    {{rest.name}}
+                                </p>
+                                </mat-card-content>
+                            </mat-card>
+                    </ng-container>
+                </div>
+
+                <div>
+                    <button (click)="nextAsM()">Next</button>
+                    <button (click)="prevAsM()">Prev</button>
+                </div>
 
 
         </div>
@@ -147,8 +159,7 @@
 
     <div style="margin-left: 30px; margin-right: 30px; justify-content: center; display: flex;">
         
-        <div class="wrapper">
-            
+        <div class="wrapper" fxHide fxHide.xs fxHide.sm fxShow.md fxShow.lg fxShow.xl>
             
             <div class="carousel-innerAs" #carouselAs>
                 <ng-container *ngFor="let rest of asianRestaurants.restaurants; let i = index">
@@ -169,9 +180,155 @@
                 <button (click)="prevAs()">Prev</button>
             </div>
 
+        </div>
+
+        <div class="wrapper-sm" fxShow fxShow.xs fxShow.sm fxHide.md fxHide.lg fxHide.xl>
+
+            <div class="carousel-inner-sm" #carouselAsSm>
+                <ng-container *ngFor="let rest of asianRestaurants.restaurants; let i = index">
+                        <mat-card class="example-card-sm">
+                            <img mat-card-image style="width: 315px; height: 200px; margin-bottom: 0 !important;" src="../../assets/images/brunch/brunch-2.jpg">
+                            <mat-divider inset></mat-divider>
+                            <mat-card-content style="padding-top:10px;">
+                            <p>
+                                {{rest.name}}
+                            </p>
+                            </mat-card-content>
+                        </mat-card>
+                </ng-container>
+            </div>
+
+            <div>
+                <button (click)="nextAsSm()">Next</button>
+                <button (click)="prevAsSm()">Prev</button>
+            </div>
 
         </div>
     
+    </div>
+
+    <div style="margin-left: 30px; margin-right: 30px; justify-content: center; display: flex;">
+        
+        <div class="wrapper" fxHide fxHide.xs fxHide.sm fxShow.md fxShow.lg fxShow.xl>
+            
+            <div class="carousel-inner">
+                <ng-container *ngFor="let rest of italianRestaurants.restaurants; let i = index">
+                        <mat-card class="example-card">
+                            <img mat-card-image style="width: 200px; height: 200px; margin-bottom: 0 !important;" src="../../assets/images/brunch/brunch-2.jpg">
+                            <mat-divider inset></mat-divider>
+                            <mat-card-content style="padding-top:10px;">
+                            <p>
+                                {{rest.name}}
+                            </p>
+                            </mat-card-content>
+                        </mat-card>
+                </ng-container>
+            </div>
+        </div>
+
+        <div class="wrapper-sm" fxShow fxShow.xs fxShow.sm fxHide.md fxHide.lg fxHide.xl>
+            <div class="carousel-inner-sm" #carouselItSm>
+                <ng-container *ngFor="let rest of italianRestaurants.restaurants; let i = index">
+                        <mat-card class="example-card-sm">
+                            <img mat-card-image style="width: 315px; height: 200px; margin-bottom: 0 !important;" src="../../assets/images/brunch/brunch-2.jpg">
+                            <mat-divider inset></mat-divider>
+                            <mat-card-content style="padding-top:10px;">
+                            <p>
+                                {{rest.name}}
+                            </p>
+                            </mat-card-content>
+                        </mat-card>
+                </ng-container>
+            </div>
+
+            <div>
+                <button (click)="nextItSm()">Next</button>
+                <button (click)="prevItSm()">Prev</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="margin-left: 30px; margin-right: 30px; justify-content: center; display: flex;">
+        
+        <div class="wrapper" fxHide fxHide.xs fxHide.sm fxShow.md fxShow.lg fxShow.xl>
+            <div class="carousel-inner">
+                <ng-container *ngFor="let rest of mexSeaRestaurants.restaurants; let i = index">
+                        <mat-card class="example-card">
+                            <img mat-card-image style="width: 200px; height: 200px; margin-bottom: 0 !important;" src="../../assets/images/brunch/brunch-2.jpg">
+                            <mat-divider inset></mat-divider>
+                            <mat-card-content style="padding-top:10px;">
+                            <p>
+                                {{rest.name}}
+                            </p>
+                            </mat-card-content>
+                        </mat-card>
+                </ng-container>
+            </div>
+        </div>
+
+        <div class="wrapper-sm" fxShow fxShow.xs fxShow.sm fxHide.md fxHide.lg fxHide.xl>
+            <div class="carousel-inner-sm" #carouselMexSm>
+                <ng-container *ngFor="let rest of mexSeaRestaurants.restaurants; let i = index">
+                        <mat-card class="example-card-sm">
+                            <img mat-card-image style="width: 315px; height: 200px; margin-bottom: 0 !important;" src="../../assets/images/brunch/brunch-2.jpg">
+                            <mat-divider inset></mat-divider>
+                            <mat-card-content style="padding-top:10px;">
+                            <p>
+                                {{rest.name}}
+                            </p>
+                            </mat-card-content>
+                        </mat-card>
+                </ng-container>
+            </div>
+
+            <div>
+                <button (click)="nextMexSm()">Next</button>
+                <button (click)="prevMexSm()">Prev</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="margin-left: 30px; margin-right: 30px; justify-content: center; display: flex;">
+        
+        <div class="wrapper" fxHide fxHide.xs fxHide.sm fxShow.md fxShow.lg fxShow.xl>
+            <div class="carousel-inner">
+                <ng-container *ngFor="let rest of healthyRestaurants.restaurants; let i = index">
+                        <mat-card class="example-card">
+                            <img mat-card-image style="width: 200px; height: 200px; margin-bottom: 0 !important;" src="../../assets/images/brunch/brunch-2.jpg">
+                            <mat-divider inset></mat-divider>
+                            <mat-card-content style="padding-top:10px;">
+                            <p>
+                                {{rest.name}}
+                            </p>
+                            </mat-card-content>
+                        </mat-card>
+                </ng-container>
+            </div>
+        </div>
+
+        <div class="wrapper-sm" fxShow fxShow.xs fxShow.sm fxHide.md fxHide.lg fxHide.xl>
+            <div class="carousel-inner-sm" #carouselHealthySm>
+                <ng-container *ngFor="let rest of healthyRestaurants.restaurants; let i = index">
+                        <mat-card class="example-card-sm">
+                            <img mat-card-image style="width: 315px; height: 200px; margin-bottom: 0 !important;" src="../../assets/images/brunch/brunch-2.jpg">
+                            <mat-divider inset></mat-divider>
+                            <mat-card-content style="padding-top:10px;">
+                            <p>
+                                {{rest.name}}
+                            </p>
+                            </mat-card-content>
+                        </mat-card>
+                </ng-container>
+            </div>
+
+            <div>
+                <button (click)="nextHealthySm()">Next</button>
+                <button (click)="prevHealthySm()">Prev</button>
+            </div>
+        </div>
+
     </div>
 
 </div>
