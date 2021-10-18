@@ -1,5 +1,7 @@
 import { animate, AnimationBuilder, AnimationFactory, AnimationPlayer, style } from '@angular/animations';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { placesData } from '../models/places-data';
+import { PlacesModel } from '../models/places-model';
 import { RestaurantModel } from '../models/restaurant-model';
 import { americanRestuarantData, asianRestuarantData, healthyRestuarantData, italianRestuarantData, mexSeaRestuarantData, restuarantData } from '../models/restuarant-data';
 @Component({
@@ -15,6 +17,8 @@ export class TravelComponent implements OnInit {
   italianRestaurants: RestaurantModel = italianRestuarantData;
   mexSeaRestaurants: RestaurantModel = mexSeaRestuarantData;
   healthyRestaurants: RestaurantModel = healthyRestuarantData;
+
+  places: PlacesModel = placesData;
 
   private currentSlide = 0;
   private currentSlideSm = 0;

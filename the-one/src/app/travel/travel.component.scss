@@ -60,10 +60,23 @@
   display: flex;
 }
 
+.places-container{
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 30px;
+}
 .button-container{
   margin-top: 10px;
 }
 
 .button-space{
   margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 599px){
+  .places-container{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
 }
