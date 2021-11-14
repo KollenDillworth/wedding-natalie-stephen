@@ -52,8 +52,13 @@
         </div>
     </div>
 
-    <div class="jonahStyle-header" style="justify-content: center; display: flex; padding-top: 5rem; padding-bottom: 1rem;">
+    <div fxHide fxHide.xs fxHide.sm fxShow.md fxShow.lg fxShow.xl class="jonahStyle-header" style="justify-content: center; display: flex; padding-top: 5rem; padding-bottom: 1rem;">
         Restaurant Reccomendations
+    </div>
+
+    <div fxShow fxShow.xs fxShow.sm fxHide.md fxHide.lg fxHide.xl fxLayout="column" class="jonahStyle-header" style="justify-content: center; display: flex; padding-top: 5rem; padding-bottom: 1rem;">
+        <div style="text-align: center;">Restaurant</div> 
+        <div style="text-align: center; margin-top: 5px;">Reccomendations</div>
     </div>
 
     <div class="jonahStyle-header" style="justify-content: center; display: flex; padding-top: 3rem;">
@@ -71,7 +76,7 @@
                                 <mat-divider inset></mat-divider>
                                 <mat-card-content style="padding-top:10px;">
                                 <p>
-                                    {{rest.name}}
+                                    <a href="{{rest.url}}" target="_blank"  style="text-decoration: underline;">{{rest.name}}</a>
                                 </p>
                                 </mat-card-content>
                             </mat-card>
@@ -96,7 +101,7 @@
                                 <mat-divider inset></mat-divider>
                                 <mat-card-content style="padding-top:10px;">
                                 <p>
-                                    {{rest.name}}
+                                    <a href="{{rest.url}}" target="_blank"  style="text-decoration: underline;">{{rest.name}}</a>
                                 </p>
                                 </mat-card-content>
                             </mat-card>
@@ -127,7 +132,7 @@
                                 <mat-divider inset></mat-divider>
                                 <mat-card-content style="padding-top:10px;">
                                 <p>
-                                    {{rest.name}}
+                                    <a href="{{rest.url}}" target="_blank"  style="text-decoration: underline;">{{rest.name}}</a>
                                 </p>
                                 </mat-card-content>
                             </mat-card>
@@ -150,7 +155,7 @@
                                 <mat-divider inset></mat-divider>
                                 <mat-card-content style="padding-top:10px;">
                                 <p>
-                                    {{rest.name}}
+                                    <a href="{{rest.url}}" target="_blank"  style="text-decoration: underline;">{{rest.name}}</a>
                                 </p>
                                 </mat-card-content>
                             </mat-card>
@@ -181,7 +186,7 @@
                             <mat-divider inset></mat-divider>
                             <mat-card-content style="padding-top:10px;">
                             <p>
-                                {{rest.name}}
+                                <a href="{{rest.url}}" target="_blank"  style="text-decoration: underline;">{{rest.name}}</a>
                             </p>
                             </mat-card-content>
                         </mat-card>
@@ -204,7 +209,7 @@
                             <mat-divider inset></mat-divider>
                             <mat-card-content style="padding-top:10px;">
                             <p>
-                                {{rest.name}}
+                                <a href="{{rest.url}}" target="_blank"  style="text-decoration: underline;">{{rest.name}}</a>
                             </p>
                             </mat-card-content>
                         </mat-card>
@@ -234,7 +239,7 @@
                             <mat-divider inset></mat-divider>
                             <mat-card-content style="padding-top:10px;">
                             <p>
-                                {{rest.name}}
+                                <a href="{{rest.url}}" target="_blank"  style="text-decoration: underline;">{{rest.name}}</a>
                             </p>
                             </mat-card-content>
                         </mat-card>
@@ -250,7 +255,7 @@
                             <mat-divider inset></mat-divider>
                             <mat-card-content style="padding-top:10px;">
                             <p>
-                                {{rest.name}}
+                                <a href="{{rest.url}}" target="_blank"  style="text-decoration: underline;">{{rest.name}}</a>
                             </p>
                             </mat-card-content>
                         </mat-card>
@@ -278,7 +283,7 @@
                             <mat-divider inset></mat-divider>
                             <mat-card-content style="padding-top:10px;">
                             <p>
-                                {{rest.name}}
+                                <a href="{{rest.url}}" target="_blank"  style="text-decoration: underline;">{{rest.name}}</a>
                             </p>
                             </mat-card-content>
                         </mat-card>
@@ -294,7 +299,7 @@
                             <mat-divider inset></mat-divider>
                             <mat-card-content style="padding-top:10px;">
                             <p>
-                                {{rest.name}}
+                                <a href="{{rest.url}}" target="_blank"  style="text-decoration: underline;">{{rest.name}}</a>
                             </p>
                             </mat-card-content>
                         </mat-card>
@@ -322,7 +327,7 @@
                             <mat-divider inset></mat-divider>
                             <mat-card-content style="padding-top:10px;">
                             <p>
-                                {{rest.name}}
+                                <a href="{{rest.url}}" target="_blank"  style="text-decoration: underline;">{{rest.name}}</a>
                             </p>
                             </mat-card-content>
                         </mat-card>
@@ -338,7 +343,7 @@
                             <mat-divider inset></mat-divider>
                             <mat-card-content style="padding-top:10px;">
                             <p>
-                                {{rest.name}}
+                                <a href="{{rest.url}}" target="_blank"  style="text-decoration: underline;">{{rest.name}}</a>
                             </p>
                             </mat-card-content>
                         </mat-card>
